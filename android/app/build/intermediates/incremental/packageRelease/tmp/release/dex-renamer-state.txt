@@ -1,0 +1,4 @@
+#Sun Nov 01 15:25:11 CET 2020
+base.0=/Users/ysf/Desktop/React/TodoList_self/android/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

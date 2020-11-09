@@ -18,7 +18,10 @@ const TodoCard = (props) => {
     <TouchableOpacity 
     style={[todoCard.Container,{backgroundColor:whichColor() }]}
     onPress={()=> props.onDone()}
-    onLongPress={() => props.onRemove()}
+    onLongPress={() =>{ 
+        props.onRemove();
+        props.onSender();
+      }}
     >
       
       <Text style={[todoCard.text,{textDecorationLine: props.data.isDone ? 'line-through':null }]}>{props.data.todo}</Text>

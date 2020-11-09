@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import { Text, TouchableOpacity} from 'react-native';
 
 import {todoCard} from '../styles';
 
@@ -16,7 +16,10 @@ const DeletedCard = (props) => {
   return (
     <TouchableOpacity 
     style={[todoCard.Container,{backgroundColor:whichColor() }]}
-    onPress = {()=>props.onDeleteItem(props.data)} // burada calisacagiz
+    onLongPress = {()=>{
+      props.onDeleteItem(props.data)
+      props.onSender()
+    }}
     >
       
       <Text style={[todoCard.text,{textDecorationLine: props.data.isDone ? 'line-through':null }]}>{props.data.todo}</Text>

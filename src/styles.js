@@ -4,7 +4,8 @@ const main = StyleSheet.create({
     titleContainer:{
         justifyContent:'space-between',
         flexDirection:'row',
-        padding:10
+        padding:10,
+        marginTop:10
 
     },
     titleText:{
@@ -48,7 +49,7 @@ const input = StyleSheet.create({
         marginVertical:1,
         padding:10,
         borderRadius:4,
-        backgroundColor:'azure',
+        backgroundColor:'lightgray',
        
         
     },
@@ -94,11 +95,26 @@ const deleted = StyleSheet.create({
     container:{
         flex:1,
         backgroundColor:'#102027',
-        marginTop:5
+        
     },
     touch:{
         fontSize:30,
-        textAlign:'center'
+        textAlign:'center',
+        color:'crimson'
+        
+    },
+    titleContainer:{
+        backgroundColor:'#102027',
+        justifyContent:'space-between',
+        flexDirection:'row',
+        padding:10,
+        marginVertical:20
+        
+    },
+    titleText:{
+        fontSize:30,
+        fontWeight:'bold',
+        color:'#00e676'  
     }
 })
 
